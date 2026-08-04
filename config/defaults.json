@@ -1,0 +1,25 @@
+{
+  "preprocessing": {
+    "highpass_hz": 500.0,
+    "filter_order": 4,
+    "zero_phase": true,
+    "envelope_s": 1.0,
+    "output_fs_hz": 100.0,
+    "mad_clipping": null
+  },
+  "threshold": {
+    "percentile": 95.0,
+    "mad_multiplier": 6.0,
+    "selection": "maximum_of_finite_candidates"
+  },
+  "baseline": {
+    "duration_before_onset_s": 60.0,
+    "exclude_onset_sample": true
+  },
+  "replay": {
+    "window_s": 30.0,
+    "update_s": 10.0,
+    "occupancy_threshold_pct": 5.0,
+    "persistence_updates": 2
+  }
+}
